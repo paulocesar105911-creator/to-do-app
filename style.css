@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(120deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* App */
+.app {
+    background: #fff;
+    width: 420px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#contador {
+    color: gray;
+}
+
+/* Entrada */
+.entrada {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+select, button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Filtros */
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.filtros button {
+    flex: 1;
+    margin: 2px;
+    background: #eee;
+    color: black;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* Prioridades */
+.alta { border-left: 5px solid red; }
+.media { border-left: 5px solid orange; }
+.baixa { border-left: 5px solid green; }
+
+/* Concluída */
+.concluida {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Botão excluir */
+.deletar {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}

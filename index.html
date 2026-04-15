@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>🚀 Minhas Tarefas</h1>
+        <p id="contador">0 tarefas</p>
+    </header>
+
+    <!-- Entrada -->
+    <div class="entrada">
+        <input type="text" id="tarefa" placeholder="Digite uma tarefa...">
+
+        <select id="prioridade">
+            <option value="alta">🔴 Alta</option>
+            <option value="media">🟡 Média</option>
+            <option value="baixa">🟢 Baixa</option>
+        </select>
+
+        <button onclick="adicionarTarefa()">+</button>
+    </div>
+
+    <!-- Filtros -->
+    <div class="filtros">
+        <button onclick="filtrar('todas')">Todas</button>
+        <button onclick="filtrar('ativas')">Ativas</button>
+        <button onclick="filtrar('concluidas')">Concluídas</button>
+    </div>
+
+    <!-- Lista -->
+    <ul id="lista"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
